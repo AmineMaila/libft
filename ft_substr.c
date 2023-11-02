@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/02 12:57:48 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/02 13:18:52 by mmaila           ###   ########.fr       */
+/*   Created: 2023/11/02 14:54:05 by mmaila            #+#    #+#             */
+/*   Updated: 2023/11/02 16:05:54 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,42 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	slen;
+	size_t	i;
+	char	*sub;
 
+	i = 0;
 	slen = ft_strlen(s);
+	if (start >= slen)
+	{
+		sub = (char *) malloc(1 * sizeof(char));
+		if (sub == NULL)
+			return (NULL);
+		sub[0] = '\0';
+		return (sub);
+	}
+	if (len > slen)
+	{
+		sub = (char *) malloc((slen - start + 1) * sizeof(char));
+		if (sub == NULL)
+			return (NULL);
+		while (s[start])
+			sub[i++] = s[start++];
+		sub[i] = '\0';
+		return (sub);
+	}
+	sub = (char *) malloc((len + 1) * sizeof(char));
+	if (sub == NULL)
+		return (NULL);
+	while (i < len)
+		sub[i++] = s[start++];
+	sub[i] = '\0';
+	return (sub);
 }
+/*#include <stdio.h>
+
+int main()
+{
+	char arr[] = "Hello";
+
+	printf("%s\n",ft_substr(arr, 2, 2));
+}*/
