@@ -1,41 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 19:41:49 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/01 20:54:11 by mmaila           ###   ########.fr       */
+/*   Created: 2023/11/02 12:27:06 by mmaila            #+#    #+#             */
+/*   Updated: 2023/11/02 12:40:08 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+char	*ft_strdup(const char *s1)
 {
-	size_t			i;
-	unsigned char	*pdst;
-	unsigned char	*psrc;
+	char	*cpy;
+	size_t	size;
 
-	pdst = (unsigned char *)dst;
-	psrc = (unsigned char *)src;
-	if (pdst == NULL && psrc == NULL)
+	size = ft_strlen(s1) + 1;
+	cpy = (char *) malloc(size * sizeof(char));
+	if (cpy == NULL)
 		return (NULL);
-	i = 0;
-	while (i < n)
-	{
-		*(pdst + i) = *(psrc + i);
-		i++;
-	}
-	return (dst);
+	ft_strlcpy(cpy, s1, size);
+	return (cpy);
 }
-/*#include <string.h>
+/*
 #include <stdio.h>
 int main()
 {
-	char arr[15] = "Hello world";
-	char dest[] = NULL;
-	printf("%s\n", ft_memcpy(NULL, arr, 5));
-	printf("%s\n", memcpy(NULL, arr, 5));
+	char arr[] = "hello world";
+
+	printf("%s\n", ft_strdup(arr));
 }*/

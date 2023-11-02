@@ -1,41 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 19:41:49 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/01 20:54:11 by mmaila           ###   ########.fr       */
+/*   Created: 2023/11/02 12:42:34 by mmaila            #+#    #+#             */
+/*   Updated: 2023/11/02 12:55:43 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_calloc(size_t count, size_t size)
 {
-	size_t			i;
-	unsigned char	*pdst;
-	unsigned char	*psrc;
+	void	*alloc;
 
-	pdst = (unsigned char *)dst;
-	psrc = (unsigned char *)src;
-	if (pdst == NULL && psrc == NULL)
+	alloc = malloc(count * size);
+	if (alloc == NULL)
 		return (NULL);
-	i = 0;
-	while (i < n)
-	{
-		*(pdst + i) = *(psrc + i);
-		i++;
-	}
-	return (dst);
+	ft_memset(alloc, '\0', count * size);
+	return (alloc);
 }
-/*#include <string.h>
+/*
 #include <stdio.h>
+
 int main()
 {
-	char arr[15] = "Hello world";
-	char dest[] = NULL;
-	printf("%s\n", ft_memcpy(NULL, arr, 5));
-	printf("%s\n", memcpy(NULL, arr, 5));
+	char *cpy;
+
+	cpy = (char *) calloc(6, sizeof(char));
+
+	printf("%s\n", cpy);
+	free(cpy);
 }*/

@@ -1,40 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 14:56:01 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/01 19:57:12 by mmaila           ###   ########.fr       */
+/*   Created: 2023/11/02 12:57:48 by mmaila            #+#    #+#             */
+/*   Updated: 2023/11/02 13:18:52 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int	i;
-	int	count;
+	size_t	slen;
 
-	i = 0;
-	count = -1;
-	while (str[i])
-	{
-		if (str[i] == (const char)c)
-			count = i;
-		i++;
-	}
-	if ((const char)c == 0)
-		return ((char *)(str + i));
-	if (count >= 0)
-		return ((char *)(str + count));
-	return (NULL);
+	slen = ft_strlen(s);
 }
-
-/*#include <stdio.h>
-
-int main()
-{
-	printf("%s\n", ft_strrchr("Hello world", 'o'));
-}*/
