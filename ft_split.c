@@ -6,7 +6,7 @@
 /*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 22:17:46 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/03 01:22:28 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/03 14:27:02 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char	**ft_split(char const *s, char c)
 	str[j] = 0;
 	return (str);
 }
-#include <stdio.h>
+/*#include <stdio.h>
 int main()
 {
 	char **arr = ft_split(NULL, ' ');
@@ -66,4 +66,4 @@ int main()
 	{
 		printf("%s\n", arr[i]);
 	}
-}
+}*/

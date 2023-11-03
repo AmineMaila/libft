@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 14:54:05 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/03 01:18:53 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/03 16:08:48 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,5 @@ int main()
 {
 	char arr[] = "Hello";
 
-	printf("%s\n",ft_substr(arr, 2, 5));
+	printf("%s\n",ft_substr(arr, 3, 2));
 }*/
