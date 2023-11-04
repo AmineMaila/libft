@@ -6,7 +6,7 @@
 /*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 17:27:29 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/01 14:45:53 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/03 17:50:35 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,24 @@ int main()
 	printf("%s\n", memchr(src, '\216', size));
 	printf("%s\n", ft_memchr(src, '\216', size));
 }*/
+/*#include <stdio.h>
+#include <string.h>
+int main ()
+ {
+    int tab[7] = {-49, 49, 1, -1, 0, -2, 2};
+    void *ret;
+	void	*ret2;
+    ret = ft_memchr(tab, -1, 7);
+	ret2 = memchr(tab, -1, 7);
+
+    if (ret != NULL)
+        printf("Found %d at index %ld\n", *(int *)ret, ((int *)ret - tab));
+    else
+        printf("%d not found\n", -1);
+	
+    if (ret2 != NULL)
+        printf("Found %d at index %ld\n", *(int *)ret2, ((int *)ret2 - tab));
+    else
+        printf("%d not found\n", -1);
+    return(0);
+ }*/

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 14:34:01 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/03 16:03:12 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/03 21:23:57 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	populate(int n, char *arr, int count)
+static void	populate(int n, char *arr, int count)
 {
 	if (n >= 10 || n <= -10)
 		populate(n / 10, arr, count - 1);

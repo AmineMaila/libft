@@ -6,13 +6,13 @@
 /*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 22:17:46 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/03 14:27:02 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/04 16:53:35 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	word_count(char const *s, char c)
+static size_t	word_count(char const *s, char c)
 {
 	size_t	i;
 	size_t	count;
@@ -31,18 +31,21 @@ size_t	word_count(char const *s, char c)
 	return (count);
 }
 
-char	**ft_split(char const *s, char c)
+static void	freemem(char **str, size_t j)
 {
-	size_t	pivot;
-	size_t	start;
-	char	**str;
+	size_t	k;
+
+	k = 0;
+	while (k < j)
+		free(str[k++]);
+}
+
+static int	alloc(char **str, char const *s, char c, size_t start)
+{
 	size_t	j;
+	size_t	pivot;
 
 	pivot = 0;
-	start = 0;
-	str = (char **) malloc((word_count(s, c) + 1) * sizeof(char *));
-	if (str == NULL)
-		return (NULL);
 	j = 0;
 	while (s[pivot])
 	{
@@ -52,18 +55,43 @@ char	**ft_split(char const *s, char c)
 		while (s[pivot] != c && s[pivot])
 			pivot++;
 		if (s[start] != '\0')
-			str[j++] = ft_substr(s, start, pivot - start);
+		{
+			str[j] = (char *) malloc(pivot - start + 1);
+			if (str[j] == NULL)
+			{
+				freemem(str, j);
+				return (0);
+			}
+			ft_strlcpy(str[j++], s + start, pivot - start + 1);
+		}
 	}
-	str[j] = 0;
+	return (1);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**str;
+	size_t	start;
+
+	start = 0;
+	if (s == NULL)
+		return (NULL);
+	str = (char **) malloc((word_count(s, c) + 1) * sizeof(char *));
+	if (str == NULL)
+		return (NULL);
+	if (alloc(str, s, c, start) == 0)
+	{
+		free(str);
+		return (NULL);
+	}
+	str[word_count(s, c)] = 0;
 	return (str);
 }
 /*#include <stdio.h>
 int main()
 {
-	char **arr = ft_split(NULL, ' ');
+	char **arr = ft_split("xddd  s", ' ');
 
-	for (int i = 0; i < 1; i++)
-	{
+	for (int i = 0; arr[i]; i++)
 		printf("%s\n", arr[i]);
-	}
 }*/

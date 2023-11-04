@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 14:54:05 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/03 16:08:48 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/03 21:18:26 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		sub[0] = '\0';
 		return (sub);
 	}
-	if (len > slen)
+	if (len > slen - start)
 		sub = (char *) malloc((slen - start + 1) * sizeof(char));
 	else
 		sub = (char *) malloc((len + 1) * sizeof(char));
@@ -43,7 +43,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 int main()
 {
-	char arr[] = "Hello";
+	char arr[] = "Hola";
 
-	printf("%s\n",ft_substr(arr, 3, 2));
+	printf("%s\n",ft_substr(arr, 2, 3));
 }*/
