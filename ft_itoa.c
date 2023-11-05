@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 14:34:01 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/05 14:34:41 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/05 17:57:49 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static void	populate(int n, char *arr, int count)
 		arr[count] = (n % 10) + '0';
 }
 
-int	arrsize(int n)
+static int	arrsize(int n)
 {
 	int	temp;
 	int	i;
