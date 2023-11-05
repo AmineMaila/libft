@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 14:54:05 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/03 21:18:26 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/05 17:20:27 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	slen = ft_strlen(s);
 	if (start >= slen)
-	{
-		sub = (char *) malloc(1 * sizeof(char));
-		if (sub == NULL)
-			return (NULL);
-		sub[0] = '\0';
-		return (sub);
-	}
+		return (ft_strdup(""));
 	if (len > slen - start)
 		sub = (char *) malloc((slen - start + 1) * sizeof(char));
 	else

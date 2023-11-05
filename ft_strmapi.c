@@ -3,15 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 16:59:42 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/03 18:14:21 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/05 16:10:21 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*char xd(unsigned int xd, char xdd)
+{
+	return (xdd + xd);
+}
+*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
@@ -29,3 +34,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return (result);
 }
+/*#include <stdio.h>
+int main()
+{
+	char arr[] = "Hello world";
+	printf("%s\n", ft_strmapi(arr, xd));
+}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 21:11:21 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/01 20:37:23 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/05 15:59:25 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (srclen);
 }
-
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <string.h>
 
 int main()

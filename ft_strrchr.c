@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 14:56:01 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/01 19:57:12 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/05 16:34:40 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	if ((const char)c == 0)
 		return ((char *)(str + i));
-	if (count >= 0)
+	if (count != -1)
 		return ((char *)(str + count));
 	return (NULL);
 }

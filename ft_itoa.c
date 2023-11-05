@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 14:34:01 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/03 21:23:57 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/05 14:34:41 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,20 +40,18 @@ int	arrsize(int n)
 char	*ft_itoa(int n)
 {
 	char	*arr;
-	int		i;
-	int		sign;
+	int		size;
 
-	sign = 1;
-	i = arrsize(n);
+	size = arrsize(n);
 	if (n < 0)
-		i++;
-	arr = (char *) malloc(i + 1);
+		size++;
+	arr = (char *) malloc(size + 1);
 	if (arr == NULL)
 		return (NULL);
 	if (n < 0)
 		arr[0] = '-';
-	populate (n, arr, i - 1);
-	arr[i] = '\0';
+	populate (n, arr, size - 1);
+	arr[size] = '\0';
 	return (arr);
 }
 /*
