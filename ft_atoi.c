@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 21:43:23 by mmaila            #+#    #+#             */
-/*   Updated: 2023/10/31 22:35:27 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/04 22:40:12 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,6 @@ int	ft_atoi(const char *str)
 
 int main()
 {
-	printf("%d\n", atoi("      -214748a2231"));
-	printf("%d\n", ft_atoi("     -214748a2231"));
+	printf("%d\n", atoi(NULL));
+	printf("%d\n", ft_atoi(NULL));
 }*/
