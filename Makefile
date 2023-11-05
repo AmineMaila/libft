@@ -6,7 +6,7 @@
 #    By: mmaila <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/01 12:42:57 by mmaila            #+#    #+#              #
-#    Updated: 2023/11/05 01:45:47 by mmaila           ###   ########.fr        #
+#    Updated: 2023/11/05 14:26:54 by mmaila           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ bonus : $(BONUSOBJ) $(OBJ)
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean : 
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(BONUSOBJ)
 
 fclean : clean
 	rm -f $(NAME)
