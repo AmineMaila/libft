@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 17:47:06 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/05 17:22:06 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/06 01:23:44 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	char	*trimmed;
 
+	if (s1 == NULL || set == NULL)
+		return (NULL);
 	start = 0;
 	end = ft_strlen(s1) - 1;
 	if (!s1[0])

@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 14:54:05 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/05 17:20:27 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/06 01:21:49 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	char	*sub;
 
+	if (s == NULL)
+		return (NULL);
 	i = 0;
 	slen = ft_strlen(s);
 	if (start >= slen)

@@ -6,7 +6,7 @@
 /*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 21:25:23 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/05 01:49:06 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/06 01:38:48 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*next;
 
+	if (del == NULL || lst == NULL)
+		return ;
 	while (*lst)
 	{
 		next = (*lst)->next;

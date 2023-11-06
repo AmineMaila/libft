@@ -6,7 +6,7 @@
 /*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 18:24:36 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/03 18:28:19 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/06 15:38:44 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,13 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (s == NULL)
+		return ;
 	while (*(s))
 		ft_putchar_fd(*(s++), fd);
 }
+/*
+int main()
+{
+	ft_putstr_fd("xddd", -1);
+}*/
