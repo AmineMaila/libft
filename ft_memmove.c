@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:57:47 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/24 17:14:51 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:19:26 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	dst = ft_memcpy(dst, src, len);
 	return (dst);
 }
-
