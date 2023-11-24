@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 15:37:02 by mmaila            #+#    #+#             */
-/*   Updated: 2023/10/31 22:34:29 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:14:55 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,3 @@ void	*ft_memset(void *b, int c, size_t len)
 		*(unsigned char *)(b + i++) = c;
 	return (b);
 }
-
-/*#include <stdio.h>
-int main()
-{
-	char arr[] = "hello world";
-
-	ft_memset(arr, 65, 5);
-	printf("%s\n", arr);
-}*/

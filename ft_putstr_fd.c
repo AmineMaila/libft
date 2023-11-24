@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 18:24:36 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/06 15:38:44 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:15:06 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,3 @@ void	ft_putstr_fd(char *s, int fd)
 	while (*(s))
 		ft_putchar_fd(*(s++), fd);
 }
-/*
-int main()
-{
-	ft_putstr_fd("xddd", -1);
-}*/

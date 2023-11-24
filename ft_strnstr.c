@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:20:22 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/05 16:32:19 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:15:47 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*#include <stdio.h>
-#include <string.h>
-int main()
-{
-
-	//const char haystack[] = "Hello World";
-	const char needle[] = "x";
-	printf("%s\n", ft_strnstr(NULL, needle, 0));
-	printf("%s\n", strnstr(NULL, needle, 0));
-}*/

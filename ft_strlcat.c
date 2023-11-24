@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 22:40:24 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/05 14:24:01 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:15:27 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[j] = '\0';
 	return (dstlen + ft_strlen(src));
 }
-
-/*#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char dst[5] = "Hello";
-	char dst2[5] = "Hello";
-	const char src[] = " xdd";
-	printf("ft :%zu\n", ft_strlcat(NULL, src, 0));
-	printf("strlcat :%zu\n", strlcat(NULL, src, 0));
-	printf("ft:%s\n", dst);
-	printf("strlcat:%s\n", dst2);
-}*/

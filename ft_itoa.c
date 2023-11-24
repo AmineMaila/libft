@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 14:34:01 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/05 17:57:49 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:14:20 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,10 +54,3 @@ char	*ft_itoa(int n)
 	arr[size] = '\0';
 	return (arr);
 }
-/*
-#include <stdio.h>
-
-int main()
-{
-	printf("%s\n", ft_itoa(-2147483648));
-}*/

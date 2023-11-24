@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 15:54:11 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/01 13:42:05 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:14:02 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,3 @@ void	ft_bzero(void *s, size_t n)
 	while (i < n)
 		*(unsigned char *)(s + i++) = 0;
 }
-/*
-#include <stdio.h>
-
-int main()
-{
-	char arr[] = "xddd";
-	ft_bzero(arr, 4);
-	printf("%s\n", arr);
-}*/

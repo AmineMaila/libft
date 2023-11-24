@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 21:43:23 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/06 17:01:57 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:13:55 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,13 +47,5 @@ int	ft_atoi(const char *str)
 			sign *= -1;
 		i++;
 	}
-	return((int)calcresult(str, sign, i));
-}
-
-#include <stdio.h>
-
-int main()
-{
-	printf("%d\n", atoi("2147483649"));
-	printf("%d\n", ft_atoi("2147483649"));
+	return ((int)calcresult(str, sign, i));
 }

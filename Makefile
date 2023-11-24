@@ -32,7 +32,7 @@ $(NAME) : $(OBJ)
 bonus : $(BONUSOBJ) $(OBJ)
 	ar rcs $(NAME) $(OBJ) $(BONUSOBJ)
 
-%.o: %.c
+%.o: %.c libft.h
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean : 

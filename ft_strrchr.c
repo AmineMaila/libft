@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 14:56:01 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/05 16:34:40 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:15:50 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,3 @@ char	*ft_strrchr(const char *str, int c)
 		return ((char *)(str + count));
 	return (NULL);
 }
-
-/*#include <stdio.h>
-
-int main()
-{
-	printf("%s\n", ft_strrchr("Hello world", 'o'));
-}*/

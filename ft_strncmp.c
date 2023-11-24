@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 15:15:57 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/01 15:11:21 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:15:42 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	return (0);
 }
-
-/*#include <stdio.h>
-int main()
-{
-	const char arr[] = "xdddd";
-	const char arr2[] = "xdddd";
-	printf("%d\n", strncmp(arr,arr2, 44));
-	printf("%d\n", ft_strncmp(arr,arr2, 44));
-}*/

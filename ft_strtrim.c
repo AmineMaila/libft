@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 17:47:06 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/06 01:23:44 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:15:53 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trimmed = ft_substr(s1, start, end - start + 1);
 	return (trimmed);
 }
-/*#include <stdio.h>
-int main()
-{
-	char arr[] = "x xx x x xxx ";
-	printf("%s\n", ft_strtrim(arr, "x "));
-}*/

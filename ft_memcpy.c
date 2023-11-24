@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 19:41:49 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/05 14:45:19 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:14:48 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*#include <string.h>
-#include <stdio.h>
-int main()
-{
-	char arr[15] = "Hello world";
-	char dest[] = NULL;
-	printf("%s\n", ft_memcpy(NULL, arr, 5));
-	printf("%s\n", memcpy(NULL, arr, 5));
-}*/

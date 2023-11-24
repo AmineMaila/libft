@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 14:54:05 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/06 01:21:49 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:15:57 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
-/*#include <stdio.h>
-
-int main()
-{
-	char arr[] = "Hola";
-
-	printf("%s\n",ft_substr(arr, 2, 3));
-}*/

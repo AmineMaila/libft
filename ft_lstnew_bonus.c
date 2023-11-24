@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 17:07:49 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/05 17:33:10 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:14:33 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,3 @@ t_list	*ft_lstnew(void *content)
 	lst->next = NULL;
 	return (lst);
 }
-/*#include <stdio.h>
-int main()
-{
-	t_list *lst = ft_lstnew("xdd");
-	printf("%s\n", lst->content);
-}*/

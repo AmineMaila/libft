@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 22:17:46 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/06 01:24:37 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:15:11 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,11 +87,3 @@ char	**ft_split(char const *s, char c)
 	str[word_count(s, c)] = 0;
 	return (str);
 }
-/*#include <stdio.h>
-int main()
-{
-	char **arr = ft_split("xddd  s", ' ');
-
-	for (int i = 0; arr[i]; i++)
-		printf("%s\n", arr[i]);
-}*/
